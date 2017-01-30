@@ -1,0 +1,27 @@
+{
+  "name": "SGReviewTableView",
+  "version": "0.1.0",
+  "summary": "A short description of SGReviewTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/goodmase/SGReviewTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "goodmase": "stephen.goodman@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/goodmase/SGReviewTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SGReviewTableView/Classes/**/*",
+  "dependencies": {
+    "RateView": [
+      "~> 1.2"
+    ]
+  }
+}

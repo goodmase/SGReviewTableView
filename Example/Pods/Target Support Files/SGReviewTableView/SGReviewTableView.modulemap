@@ -1,0 +1,6 @@
+framework module SGReviewTableView {
+  umbrella header "SGReviewTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

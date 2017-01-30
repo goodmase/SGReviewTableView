@@ -2,12 +2,12 @@
 //  SGViewController.h
 //  SGReviewTableView
 //
-//  Created by goodmase on 01/30/2017.
-//  Copyright (c) 2017 goodmase. All rights reserved.
+//  Created by Stephen Goodman on 1/30/17.
+//  Copyright © 2017 goodmase. All rights reserved.
 //
 
-@import UIKit;
+#import <SGReviewTableView/SGReviewTableViewController.h>
 
-@interface SGViewController : UIViewController
+@interface SGViewController : SGReviewTableViewController
 
 @end

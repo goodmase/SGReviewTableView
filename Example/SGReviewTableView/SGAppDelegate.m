@@ -7,11 +7,25 @@
 //
 
 #import "SGAppDelegate.h"
+#import "SGViewController.h"
+
+@import SGReviewTableView;
 
 @implementation SGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    SGReview *aReview = [[SGReview alloc] initWithRating:4.5 content:@"Great experience!" andDate:[NSDate new]];
+    
+    SGReviewTableViewController *reviewVC = [[SGViewController alloc] initWithReviews:@[aReview]];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:reviewVC];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
 }

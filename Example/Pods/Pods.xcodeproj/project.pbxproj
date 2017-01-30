@@ -1,0 +1,943 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A93072D95F6009E069619C8C98CB5D /* SGReviewTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 505A6EA9899AA4495CCA09BC16566006 /* SGReviewTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0498491024FE13AE3A8E20A835166560 /* SGReviewHeaderTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 3B70FB773EC9A7F893541210DD7A3CDA /* SGReviewHeaderTableViewCell.xib */; };
+		08E1AE37DEC029F5B1AB7032334042FF /* RateView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB45AF8372C458543E21A1D7A2C07F5 /* RateView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ACF30EDE39BD41A7D2D3B8D841DB60F /* SGReviewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ADBB44F90E59076748443629CDD4E3 /* SGReviewTableViewController.m */; };
+		32E8B123E4DDE0EB2CF280C2ED839F6F /* RateView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF4137D0FC52F60307D1CA86133DC41 /* RateView.framework */; };
+		509BAF6278EB725DB3A4077A7D7475C7 /* SGReviewTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4577A413F3595BB56E268758E8285109 /* SGReviewTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55B6964FBA68EA582675DB75E38C6432 /* Pods-SGReviewTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1746A1CC751203976BBC7600BCD8B2 /* Pods-SGReviewTableView_Tests-dummy.m */; };
+		60CC6B89540FBC904DA26DED32EADF87 /* SGReviewHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 351240CAAAE09D356507BF709046A7A1 /* SGReviewHeaderTableViewCell.m */; };
+		687B36BF80F16623085E1F46D19F2222 /* RateView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A6BC57F6B409661A8763A5D7579C2C /* RateView-dummy.m */; };
+		6BB8A4619A06552A11DEF22AE4DCDBDB /* SGReviewTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF9944F1773DE7DEE4DEA400304B9BB /* SGReviewTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DE88524F4C4E39E05F8032CCD4110BE /* SGReview.h in Headers */ = {isa = PBXBuildFile; fileRef = F8A9FA84488452445560BE4C602557A9 /* SGReview.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E2B869BA4E8BEAA74F2E7A58870AC75 /* SGBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 811DFBDD85083E560BBFB35C07B9D13E /* SGBarView.m */; };
+		7F8849D751FF18F85D52F99AEF96C694 /* SGBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 277E5525035E5296047D1B1F8F5BDA8B /* SGBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		804FC2D379ACBE4D49582FAB5F21302E /* SGReview.m in Sources */ = {isa = PBXBuildFile; fileRef = D3FFD0C59F144C615191F2A8E2B84C87 /* SGReview.m */; };
+		822862B2FAEBE69FD1E9582E09A4BB89 /* SGReviewHeaderTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 666846356B48D4DF02C6DAE386EA645B /* SGReviewHeaderTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CDF32BFD7FD15522EE28686EA176A2B /* Pods-SGReviewTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B80FA09CF02409DA0103EE18745084FF /* Pods-SGReviewTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A506403FA0E6E03E3C2E837455EE154F /* SGReviewTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = D3B27F40EFF712A31D3D0803524C3D03 /* SGReviewTableViewCell.xib */; };
+		A7BF5EE810DDB539D79B0DA76E8D47CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */; };
+		B3CC4DDDEA34AB235EB6705FD9ACD267 /* RateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B9DE7B2147E734173A255380FF8FF9 /* RateView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B659BD3241CD9BB3F31C257F49A6F992 /* Pods-SGReviewTableView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F63A4A401AB87FC019C385C83DBE146D /* Pods-SGReviewTableView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C24A01D211A4AC424CC4A5BB6C38EBCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */; };
+		D1446E175B779C812981A5ED081D3E43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */; };
+		DAB43E4D707DDF45DA2C3D72E56DB57B /* SGReviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0D88E97FC2B06A6D83DB2BBB343322 /* SGReviewTableViewCell.m */; };
+		DF8FDAB9DF402D9B49C40C1FFFE5F115 /* SGReviewTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FA6394D9A560349B35FB179DED219C /* SGReviewTableView-dummy.m */; };
+		EA51D5B49D630C00114F40FD956A91F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */; };
+		ED9058E6A9C155B2A2D30B03ABA8A4A9 /* RateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA04744DF36CC527F76C8A95F3986E7 /* RateView.m */; };
+		F10E6AB902C3D1BB220FEB5F13EC61BC /* Pods-SGReviewTableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 293517F511671E33B668264B62CEB78F /* Pods-SGReviewTableView_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D260F7991DB73AA6B34C852F1F08EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68C52F1AB98E2F5B02FEAAA1E2A8A3F5;
+			remoteInfo = RateView;
+		};
+		60D491C1EFA6DC4A101CBEFAE0BF4AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC91A08798DE1D93B753C503232636CB;
+			remoteInfo = SGReviewTableView;
+		};
+		6541522DCF538DCF09FFFB9A7EC7A188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68C52F1AB98E2F5B02FEAAA1E2A8A3F5;
+			remoteInfo = RateView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07ADBB44F90E59076748443629CDD4E3 /* SGReviewTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGReviewTableViewController.m; sourceTree = "<group>"; };
+		09063D0E4FDDB84D7911C4E04DFD8481 /* SGReviewTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SGReviewTableView-prefix.pch"; sourceTree = "<group>"; };
+		0C03F2776EE5F5C0ACB26B13523ABD24 /* Pods-SGReviewTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGReviewTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F7D1D107DB055245F8336A477FECDB7 /* Pods-SGReviewTableView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGReviewTableView_Tests-resources.sh"; sourceTree = "<group>"; };
+		162022BC98EEEA27AF6E5536DC053C43 /* Pods-SGReviewTableView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SGReviewTableView_Tests.modulemap"; sourceTree = "<group>"; };
+		2389F8E4C093ED2F669ABDF228E427BF /* Pods-SGReviewTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGReviewTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		277E5525035E5296047D1B1F8F5BDA8B /* SGBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGBarView.h; sourceTree = "<group>"; };
+		293517F511671E33B668264B62CEB78F /* Pods-SGReviewTableView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SGReviewTableView_Example-dummy.m"; sourceTree = "<group>"; };
+		2A0B6DC572D7C52418C66021DA1F050D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		351240CAAAE09D356507BF709046A7A1 /* SGReviewHeaderTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGReviewHeaderTableViewCell.m; sourceTree = "<group>"; };
+		3B1746A1CC751203976BBC7600BCD8B2 /* Pods-SGReviewTableView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SGReviewTableView_Tests-dummy.m"; sourceTree = "<group>"; };
+		3B70FB773EC9A7F893541210DD7A3CDA /* SGReviewHeaderTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SGReviewHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		4577A413F3595BB56E268758E8285109 /* SGReviewTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGReviewTableViewCell.h; sourceTree = "<group>"; };
+		48A50ED3A3A087F9E8FE849C45A47C34 /* Pods_SGReviewTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SGReviewTableView_Example.framework; path = "Pods-SGReviewTableView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		505A6EA9899AA4495CCA09BC16566006 /* SGReviewTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGReviewTableViewController.h; sourceTree = "<group>"; };
+		5361244441EED1FC7C082FA7BFD701CB /* Pods-SGReviewTableView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SGReviewTableView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E0D946102E9DD5F02A05F6F9BE2448B /* Pods-SGReviewTableView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SGReviewTableView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5E7852D3827420660D38379E708CDBB7 /* Pods_SGReviewTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SGReviewTableView_Tests.framework; path = "Pods-SGReviewTableView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C15AC23B6D310C811C0C61FDCB3678 /* Pods-SGReviewTableView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGReviewTableView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		666846356B48D4DF02C6DAE386EA645B /* SGReviewHeaderTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGReviewHeaderTableViewCell.h; sourceTree = "<group>"; };
+		6BF4137D0FC52F60307D1CA86133DC41 /* RateView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RateView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C284DD4E525244925F997664E5A93AF /* SGReviewTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SGReviewTableView.framework; path = SGReviewTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0D88E97FC2B06A6D83DB2BBB343322 /* SGReviewTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGReviewTableViewCell.m; sourceTree = "<group>"; };
+		6F26008BA662C8C6E9F6F74730FFD3D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7512E480DFF6F4279D704972B5EEAAD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB45AF8372C458543E21A1D7A2C07F5 /* RateView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RateView-umbrella.h"; sourceTree = "<group>"; };
+		811DFBDD85083E560BBFB35C07B9D13E /* SGBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGBarView.m; sourceTree = "<group>"; };
+		8165C96C4D312B289E91C9FAF802B242 /* Pods-SGReviewTableView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGReviewTableView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		82862DFCCCB048644884EC81F6A84905 /* Pods-SGReviewTableView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGReviewTableView_Example-resources.sh"; sourceTree = "<group>"; };
+		8EF9944F1773DE7DEE4DEA400304B9BB /* SGReviewTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SGReviewTableView-umbrella.h"; sourceTree = "<group>"; };
+		928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		92B9DE7B2147E734173A255380FF8FF9 /* RateView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RateView.h; path = RateView/RateView.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A9997B5E278AF9F31EE017A5353E59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FD7ACC2EF1E385AA2ABEE9DC085FE8 /* SGReviewTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SGReviewTableView.modulemap; sourceTree = "<group>"; };
+		97031908955EE12F999CD6F6E3CF0168 /* Pods-SGReviewTableView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SGReviewTableView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9BA04744DF36CC527F76C8A95F3986E7 /* RateView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RateView.m; path = RateView/RateView.m; sourceTree = "<group>"; };
+		A2C76D91DEEB6E0C61F1CAB3B3BD41C7 /* Pods-SGReviewTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGReviewTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B24974D97A2A9530F662A045A4D48870 /* Pods-SGReviewTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGReviewTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B3213ECA3ED2965E1A0EAFF2DF276970 /* RateView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RateView-prefix.pch"; sourceTree = "<group>"; };
+		B80FA09CF02409DA0103EE18745084FF /* Pods-SGReviewTableView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SGReviewTableView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C5FA6394D9A560349B35FB179DED219C /* SGReviewTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SGReviewTableView-dummy.m"; sourceTree = "<group>"; };
+		D3B27F40EFF712A31D3D0803524C3D03 /* SGReviewTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SGReviewTableViewCell.xib; sourceTree = "<group>"; };
+		D3FFD0C59F144C615191F2A8E2B84C87 /* SGReview.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGReview.m; sourceTree = "<group>"; };
+		D54F21C14B850E625CB415D132788F04 /* Pods-SGReviewTableView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SGReviewTableView_Example.modulemap"; sourceTree = "<group>"; };
+		DB4B4429CE72EB530ACC64AA3841D8B7 /* RateView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RateView.xcconfig; sourceTree = "<group>"; };
+		E507EBAE48C15CD48C8637103154AA05 /* Pods-SGReviewTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SGReviewTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EB5D4B22B75BF49369FC74840BC0211A /* RateView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RateView.framework; path = RateView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6034576B4B2A98D461932A98D52A09 /* SGReviewTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SGReviewTableView.xcconfig; sourceTree = "<group>"; };
+		EFF5739CE49481E3DFB4573255ECEFF1 /* RateView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RateView.modulemap; sourceTree = "<group>"; };
+		F1A6BC57F6B409661A8763A5D7579C2C /* RateView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RateView-dummy.m"; sourceTree = "<group>"; };
+		F63A4A401AB87FC019C385C83DBE146D /* Pods-SGReviewTableView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SGReviewTableView_Example-umbrella.h"; sourceTree = "<group>"; };
+		F8A9FA84488452445560BE4C602557A9 /* SGReview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGReview.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E15B51D9D57221398754966528967D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7BF5EE810DDB539D79B0DA76E8D47CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1504D6898630F60949133CF531F95F9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA51D5B49D630C00114F40FD956A91F3 /* Foundation.framework in Frameworks */,
+				32E8B123E4DDE0EB2CF280C2ED839F6F /* RateView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5D96686B0CBD7388D29C55BFC1D393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1446E175B779C812981A5ED081D3E43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B30BCEF36EDDD1BDC3F058FC925C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24A01D211A4AC424CC4A5BB6C38EBCC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		066D8B2585792B5B8FD7ED53A27564F3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				277E5525035E5296047D1B1F8F5BDA8B /* SGBarView.h */,
+				811DFBDD85083E560BBFB35C07B9D13E /* SGBarView.m */,
+				F8A9FA84488452445560BE4C602557A9 /* SGReview.h */,
+				D3FFD0C59F144C615191F2A8E2B84C87 /* SGReview.m */,
+				666846356B48D4DF02C6DAE386EA645B /* SGReviewHeaderTableViewCell.h */,
+				351240CAAAE09D356507BF709046A7A1 /* SGReviewHeaderTableViewCell.m */,
+				3B70FB773EC9A7F893541210DD7A3CDA /* SGReviewHeaderTableViewCell.xib */,
+				4577A413F3595BB56E268758E8285109 /* SGReviewTableViewCell.h */,
+				6F0D88E97FC2B06A6D83DB2BBB343322 /* SGReviewTableViewCell.m */,
+				D3B27F40EFF712A31D3D0803524C3D03 /* SGReviewTableViewCell.xib */,
+				505A6EA9899AA4495CCA09BC16566006 /* SGReviewTableViewController.h */,
+				07ADBB44F90E59076748443629CDD4E3 /* SGReviewTableViewController.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0DC6B81E3E0E32E439A2F6D666651572 /* SGReviewTableView */ = {
+			isa = PBXGroup;
+			children = (
+				066D8B2585792B5B8FD7ED53A27564F3 /* Classes */,
+			);
+			name = SGReviewTableView;
+			path = SGReviewTableView;
+			sourceTree = "<group>";
+		};
+		0F2CE3787B0D84F3575F18F69A641E72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BF4137D0FC52F60307D1CA86133DC41 /* RateView.framework */,
+				6CC6FE6996139788949919B45A66432B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CBF9ABE9E1D8A68AC7FDF7FE86251F7 /* SGReviewTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0DC6B81E3E0E32E439A2F6D666651572 /* SGReviewTableView */,
+				6CC38062BCD9E762ECAB80A14D011940 /* Support Files */,
+			);
+			name = SGReviewTableView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3D494EFBA2E002190BF532CD3B33249B /* Pods-SGReviewTableView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6F26008BA662C8C6E9F6F74730FFD3D5 /* Info.plist */,
+				162022BC98EEEA27AF6E5536DC053C43 /* Pods-SGReviewTableView_Tests.modulemap */,
+				E507EBAE48C15CD48C8637103154AA05 /* Pods-SGReviewTableView_Tests-acknowledgements.markdown */,
+				97031908955EE12F999CD6F6E3CF0168 /* Pods-SGReviewTableView_Tests-acknowledgements.plist */,
+				3B1746A1CC751203976BBC7600BCD8B2 /* Pods-SGReviewTableView_Tests-dummy.m */,
+				8165C96C4D312B289E91C9FAF802B242 /* Pods-SGReviewTableView_Tests-frameworks.sh */,
+				0F7D1D107DB055245F8336A477FECDB7 /* Pods-SGReviewTableView_Tests-resources.sh */,
+				B80FA09CF02409DA0103EE18745084FF /* Pods-SGReviewTableView_Tests-umbrella.h */,
+				0C03F2776EE5F5C0ACB26B13523ABD24 /* Pods-SGReviewTableView_Tests.debug.xcconfig */,
+				A2C76D91DEEB6E0C61F1CAB3B3BD41C7 /* Pods-SGReviewTableView_Tests.release.xcconfig */,
+			);
+			name = "Pods-SGReviewTableView_Tests";
+			path = "Target Support Files/Pods-SGReviewTableView_Tests";
+			sourceTree = "<group>";
+		};
+		4DBBF292752B29A389BD3ADD8446B631 /* Pods-SGReviewTableView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				93A9997B5E278AF9F31EE017A5353E59 /* Info.plist */,
+				D54F21C14B850E625CB415D132788F04 /* Pods-SGReviewTableView_Example.modulemap */,
+				5E0D946102E9DD5F02A05F6F9BE2448B /* Pods-SGReviewTableView_Example-acknowledgements.markdown */,
+				5361244441EED1FC7C082FA7BFD701CB /* Pods-SGReviewTableView_Example-acknowledgements.plist */,
+				293517F511671E33B668264B62CEB78F /* Pods-SGReviewTableView_Example-dummy.m */,
+				62C15AC23B6D310C811C0C61FDCB3678 /* Pods-SGReviewTableView_Example-frameworks.sh */,
+				82862DFCCCB048644884EC81F6A84905 /* Pods-SGReviewTableView_Example-resources.sh */,
+				F63A4A401AB87FC019C385C83DBE146D /* Pods-SGReviewTableView_Example-umbrella.h */,
+				2389F8E4C093ED2F669ABDF228E427BF /* Pods-SGReviewTableView_Example.debug.xcconfig */,
+				B24974D97A2A9530F662A045A4D48870 /* Pods-SGReviewTableView_Example.release.xcconfig */,
+			);
+			name = "Pods-SGReviewTableView_Example";
+			path = "Target Support Files/Pods-SGReviewTableView_Example";
+			sourceTree = "<group>";
+		};
+		66F962B26E3E54BE6D24AC8FCC18C701 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48A50ED3A3A087F9E8FE849C45A47C34 /* Pods_SGReviewTableView_Example.framework */,
+				5E7852D3827420660D38379E708CDBB7 /* Pods_SGReviewTableView_Tests.framework */,
+				EB5D4B22B75BF49369FC74840BC0211A /* RateView.framework */,
+				6C284DD4E525244925F997664E5A93AF /* SGReviewTableView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CC38062BCD9E762ECAB80A14D011940 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A0B6DC572D7C52418C66021DA1F050D /* Info.plist */,
+				94FD7ACC2EF1E385AA2ABEE9DC085FE8 /* SGReviewTableView.modulemap */,
+				ED6034576B4B2A98D461932A98D52A09 /* SGReviewTableView.xcconfig */,
+				C5FA6394D9A560349B35FB179DED219C /* SGReviewTableView-dummy.m */,
+				09063D0E4FDDB84D7911C4E04DFD8481 /* SGReviewTableView-prefix.pch */,
+				8EF9944F1773DE7DEE4DEA400304B9BB /* SGReviewTableView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SGReviewTableView";
+			sourceTree = "<group>";
+		};
+		6CC6FE6996139788949919B45A66432B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D6886B2F0AE6699BBAE5197763FBC928 /* Development Pods */,
+				0F2CE3787B0D84F3575F18F69A641E72 /* Frameworks */,
+				A19D2761D43DF30EDEF903550B39FA1B /* Pods */,
+				66F962B26E3E54BE6D24AC8FCC18C701 /* Products */,
+				FC28BA40D90AEF0238CBE84972B9C2BB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A19D2761D43DF30EDEF903550B39FA1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD54B04A01AAEBDCDCA969A5C6AD8950 /* RateView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7A941E3520401FB7F01E8312D6919C8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7512E480DFF6F4279D704972B5EEAAD2 /* Info.plist */,
+				EFF5739CE49481E3DFB4573255ECEFF1 /* RateView.modulemap */,
+				DB4B4429CE72EB530ACC64AA3841D8B7 /* RateView.xcconfig */,
+				F1A6BC57F6B409661A8763A5D7579C2C /* RateView-dummy.m */,
+				B3213ECA3ED2965E1A0EAFF2DF276970 /* RateView-prefix.pch */,
+				7EB45AF8372C458543E21A1D7A2C07F5 /* RateView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RateView";
+			sourceTree = "<group>";
+		};
+		D6886B2F0AE6699BBAE5197763FBC928 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF9ABE9E1D8A68AC7FDF7FE86251F7 /* SGReviewTableView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DD54B04A01AAEBDCDCA969A5C6AD8950 /* RateView */ = {
+			isa = PBXGroup;
+			children = (
+				92B9DE7B2147E734173A255380FF8FF9 /* RateView.h */,
+				9BA04744DF36CC527F76C8A95F3986E7 /* RateView.m */,
+				B7A941E3520401FB7F01E8312D6919C8 /* Support Files */,
+			);
+			name = RateView;
+			path = RateView;
+			sourceTree = "<group>";
+		};
+		FC28BA40D90AEF0238CBE84972B9C2BB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DBBF292752B29A389BD3ADD8446B631 /* Pods-SGReviewTableView_Example */,
+				3D494EFBA2E002190BF532CD3B33249B /* Pods-SGReviewTableView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06274C23A7BC67D02F0D8284D4F60B95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E1AE37DEC029F5B1AB7032334042FF /* RateView-umbrella.h in Headers */,
+				B3CC4DDDEA34AB235EB6705FD9ACD267 /* RateView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E1E22B4C92472184BD7818D3343B955 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CDF32BFD7FD15522EE28686EA176A2B /* Pods-SGReviewTableView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC965DE37BF03FF2DBD1591F325F69D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B659BD3241CD9BB3F31C257F49A6F992 /* Pods-SGReviewTableView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA487A1E7D1D9FDCE804781E1DE47EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8849D751FF18F85D52F99AEF96C694 /* SGBarView.h in Headers */,
+				7DE88524F4C4E39E05F8032CCD4110BE /* SGReview.h in Headers */,
+				822862B2FAEBE69FD1E9582E09A4BB89 /* SGReviewHeaderTableViewCell.h in Headers */,
+				6BB8A4619A06552A11DEF22AE4DCDBDB /* SGReviewTableView-umbrella.h in Headers */,
+				509BAF6278EB725DB3A4077A7D7475C7 /* SGReviewTableViewCell.h in Headers */,
+				02A93072D95F6009E069619C8C98CB5D /* SGReviewTableViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4291B01B7F70BAA700633C5697ABA576 /* Pods-SGReviewTableView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E174F58E1431F927E27BCB884672AF /* Build configuration list for PBXNativeTarget "Pods-SGReviewTableView_Example" */;
+			buildPhases = (
+				F58B1EE521D4719A5D922205D5EF92F4 /* Sources */,
+				0E15B51D9D57221398754966528967D1 /* Frameworks */,
+				BCC965DE37BF03FF2DBD1591F325F69D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AC985F8211C5A4A5480F25C1D6CC2D9 /* PBXTargetDependency */,
+				EA460DE726942C8ABFA32D95EEF804B3 /* PBXTargetDependency */,
+			);
+			name = "Pods-SGReviewTableView_Example";
+			productName = "Pods-SGReviewTableView_Example";
+			productReference = 48A50ED3A3A087F9E8FE849C45A47C34 /* Pods_SGReviewTableView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68C52F1AB98E2F5B02FEAAA1E2A8A3F5 /* RateView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D96F5F1479EF696C97B5D2AC59F712F5 /* Build configuration list for PBXNativeTarget "RateView" */;
+			buildPhases = (
+				2436DB7C41B6510B7533E402BE06E8E8 /* Sources */,
+				30B30BCEF36EDDD1BDC3F058FC925C5B /* Frameworks */,
+				06274C23A7BC67D02F0D8284D4F60B95 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RateView;
+			productName = RateView;
+			productReference = EB5D4B22B75BF49369FC74840BC0211A /* RateView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B67217AB780ECC152EFE96C04912507A /* Pods-SGReviewTableView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A893D15A7F7F56C3ABBD393E0F49CB2 /* Build configuration list for PBXNativeTarget "Pods-SGReviewTableView_Tests" */;
+			buildPhases = (
+				5415C9EF4E9682B729B35DD6192FE43C /* Sources */,
+				2F5D96686B0CBD7388D29C55BFC1D393 /* Frameworks */,
+				4E1E22B4C92472184BD7818D3343B955 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SGReviewTableView_Tests";
+			productName = "Pods-SGReviewTableView_Tests";
+			productReference = 5E7852D3827420660D38379E708CDBB7 /* Pods_SGReviewTableView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BC91A08798DE1D93B753C503232636CB /* SGReviewTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F09A52398E37B2493FB995E0330A232 /* Build configuration list for PBXNativeTarget "SGReviewTableView" */;
+			buildPhases = (
+				BE9574E8C0D02C6EAE48554CE4E8FAF2 /* Sources */,
+				1504D6898630F60949133CF531F95F9E /* Frameworks */,
+				CAA487A1E7D1D9FDCE804781E1DE47EC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53E0138BEA0C49D1CEB1966FE0BA4D32 /* PBXTargetDependency */,
+			);
+			name = SGReviewTableView;
+			productName = SGReviewTableView;
+			productReference = 6C284DD4E525244925F997664E5A93AF /* SGReviewTableView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 66F962B26E3E54BE6D24AC8FCC18C701 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4291B01B7F70BAA700633C5697ABA576 /* Pods-SGReviewTableView_Example */,
+				B67217AB780ECC152EFE96C04912507A /* Pods-SGReviewTableView_Tests */,
+				68C52F1AB98E2F5B02FEAAA1E2A8A3F5 /* RateView */,
+				BC91A08798DE1D93B753C503232636CB /* SGReviewTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2436DB7C41B6510B7533E402BE06E8E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687B36BF80F16623085E1F46D19F2222 /* RateView-dummy.m in Sources */,
+				ED9058E6A9C155B2A2D30B03ABA8A4A9 /* RateView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5415C9EF4E9682B729B35DD6192FE43C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B6964FBA68EA582675DB75E38C6432 /* Pods-SGReviewTableView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9574E8C0D02C6EAE48554CE4E8FAF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2B869BA4E8BEAA74F2E7A58870AC75 /* SGBarView.m in Sources */,
+				804FC2D379ACBE4D49582FAB5F21302E /* SGReview.m in Sources */,
+				60CC6B89540FBC904DA26DED32EADF87 /* SGReviewHeaderTableViewCell.m in Sources */,
+				0498491024FE13AE3A8E20A835166560 /* SGReviewHeaderTableViewCell.xib in Sources */,
+				DF8FDAB9DF402D9B49C40C1FFFE5F115 /* SGReviewTableView-dummy.m in Sources */,
+				DAB43E4D707DDF45DA2C3D72E56DB57B /* SGReviewTableViewCell.m in Sources */,
+				A506403FA0E6E03E3C2E837455EE154F /* SGReviewTableViewCell.xib in Sources */,
+				2ACF30EDE39BD41A7D2D3B8D841DB60F /* SGReviewTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F58B1EE521D4719A5D922205D5EF92F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10E6AB902C3D1BB220FEB5F13EC61BC /* Pods-SGReviewTableView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AC985F8211C5A4A5480F25C1D6CC2D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RateView;
+			target = 68C52F1AB98E2F5B02FEAAA1E2A8A3F5 /* RateView */;
+			targetProxy = 6541522DCF538DCF09FFFB9A7EC7A188 /* PBXContainerItemProxy */;
+		};
+		53E0138BEA0C49D1CEB1966FE0BA4D32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RateView;
+			target = 68C52F1AB98E2F5B02FEAAA1E2A8A3F5 /* RateView */;
+			targetProxy = 5D260F7991DB73AA6B34C852F1F08EBD /* PBXContainerItemProxy */;
+		};
+		EA460DE726942C8ABFA32D95EEF804B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SGReviewTableView;
+			target = BC91A08798DE1D93B753C503232636CB /* SGReviewTableView */;
+			targetProxy = 60D491C1EFA6DC4A101CBEFAE0BF4AD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14D683BD20EC25FF95C29B42E05917F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B24974D97A2A9530F662A045A4D48870 /* Pods-SGReviewTableView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SGReviewTableView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SGReviewTableView_Example/Pods-SGReviewTableView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SGReviewTableView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CBE5EA185829FCD7EC6050080128A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB4B4429CE72EB530ACC64AA3841D8B7 /* RateView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RateView/RateView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RateView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RateView/RateView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RateView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AC8483FE3F15D31A00D7EDDF1B0F2D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB4B4429CE72EB530ACC64AA3841D8B7 /* RateView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RateView/RateView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RateView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RateView/RateView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RateView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5052DD72A8151A45EBB97B05FA507F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6034576B4B2A98D461932A98D52A09 /* SGReviewTableView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SGReviewTableView/SGReviewTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SGReviewTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SGReviewTableView/SGReviewTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SGReviewTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54DE80CDD5D69FF1852C30B784B0D126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2389F8E4C093ED2F669ABDF228E427BF /* Pods-SGReviewTableView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SGReviewTableView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SGReviewTableView_Example/Pods-SGReviewTableView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SGReviewTableView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6192E008B3E6E2B56D94E28F6E3C0A9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C03F2776EE5F5C0ACB26B13523ABD24 /* Pods-SGReviewTableView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SGReviewTableView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SGReviewTableView_Tests/Pods-SGReviewTableView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SGReviewTableView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F34D2FD935F582F84DD2C7343470261 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6034576B4B2A98D461932A98D52A09 /* SGReviewTableView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SGReviewTableView/SGReviewTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SGReviewTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SGReviewTableView/SGReviewTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SGReviewTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE686C7E7C49299B46F300CC5A84F075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C76D91DEEB6E0C61F1CAB3B3BD41C7 /* Pods-SGReviewTableView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SGReviewTableView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SGReviewTableView_Tests/Pods-SGReviewTableView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SGReviewTableView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F09A52398E37B2493FB995E0330A232 /* Build configuration list for PBXNativeTarget "SGReviewTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5052DD72A8151A45EBB97B05FA507F4F /* Debug */,
+				9F34D2FD935F582F84DD2C7343470261 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E174F58E1431F927E27BCB884672AF /* Build configuration list for PBXNativeTarget "Pods-SGReviewTableView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DE80CDD5D69FF1852C30B784B0D126 /* Debug */,
+				14D683BD20EC25FF95C29B42E05917F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A893D15A7F7F56C3ABBD393E0F49CB2 /* Build configuration list for PBXNativeTarget "Pods-SGReviewTableView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6192E008B3E6E2B56D94E28F6E3C0A9C /* Debug */,
+				EE686C7E7C49299B46F300CC5A84F075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D96F5F1479EF696C97B5D2AC59F712F5 /* Build configuration list for PBXNativeTarget "RateView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC8483FE3F15D31A00D7EDDF1B0F2D4 /* Debug */,
+				1CBE5EA185829FCD7EC6050080128A0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,20 @@
+PODS:
+  - RateView (1.2)
+  - SGReviewTableView (0.1.0):
+    - RateView (~> 1.2)
+
+DEPENDENCIES:
+  - RateView (~> 1.2)
+  - SGReviewTableView (from `../`)
+
+EXTERNAL SOURCES:
+  SGReviewTableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RateView: d4d12e9bb76dc23a77a56f4e5c5fb530a3f3f998
+  SGReviewTableView: 64a9bfc1c6c7154a6e982a96e12b39158d590c2d
+
+PODFILE CHECKSUM: 2ad651b79c7cabc3f8f8ab61e99ff79358f36f65
+
+COCOAPODS: 1.1.1

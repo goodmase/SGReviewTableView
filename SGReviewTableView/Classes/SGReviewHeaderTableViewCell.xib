@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="198" id="KGk-i7-Jjw" customClass="SGReviewHeaderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="rjh-kP-mHi">
+                        <rect key="frame" x="22" y="8" width="276" height="181"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="G3v-qk-Zjy" userLabel="graph stack view">
+                                <rect key="frame" x="0.0" y="0.0" width="131" height="181"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zo2-fx-uwc" userLabel="5 stack view">
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qP-tG-PZJ" userLabel="5 Stars">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="nWt-Zz-cHn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WlE-en-ZcK" customClass="SGBarView">
+                                                <rect key="frame" x="44" y="0.0" width="87" height="33"/>
+                                                <color key="backgroundColor" red="0.91764706373214722" green="0.91764706373214722" blue="0.91764706373214722" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="LgS-Fq-HBI" userLabel="4 stack view">
+                                        <rect key="frame" x="0.0" y="37" width="131" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09D-bk-MuK" userLabel="4 Stars">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="6Ng-2o-6aq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDN-Hf-yBV" customClass="SGBarView">
+                                                <rect key="frame" x="44" y="0.0" width="87" height="33"/>
+                                                <color key="backgroundColor" red="0.91764706373214722" green="0.91764706373214722" blue="0.91764706373214722" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Qgm-7w-a5l" userLabel="3 stack view">
+                                        <rect key="frame" x="0.0" y="74" width="131" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="els-JB-tJT" userLabel="3 Stars">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="wUO-hm-4R2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTR-uD-NZt" customClass="SGBarView">
+                                                <rect key="frame" x="44" y="0.0" width="87" height="33"/>
+                                                <color key="backgroundColor" red="0.91764706373214722" green="0.91764706373214722" blue="0.91764706373214722" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="u7f-oi-qoa" userLabel="2 stack view">
+                                        <rect key="frame" x="0.0" y="111" width="131" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcS-bd-qGU" userLabel="2 Stars">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="PFp-dG-MHA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5O-7B-fsU" customClass="SGBarView">
+                                                <rect key="frame" x="44" y="0.0" width="87" height="33"/>
+                                                <color key="backgroundColor" red="0.91764706373214722" green="0.91764706373214722" blue="0.91764706373214722" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eqr-1h-9BT" userLabel="1 stack view">
+                                        <rect key="frame" x="0.0" y="148" width="131" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Star" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3C-gu-63B" userLabel="1 Stars">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="94V-Hg-cVh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9EY-dl-gh8" customClass="SGBarView">
+                                                <rect key="frame" x="44" y="0.0" width="87" height="33"/>
+                                                <color key="backgroundColor" red="0.91764706373214722" green="0.91764706373214722" blue="0.91764706373214722" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCo-oU-Yq9" userLabel="Info View">
+                                <rect key="frame" x="145" y="0.0" width="131" height="181"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.0/5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ae-2S-GYS" userLabel="rating label">
+                                        <rect key="frame" x="8" y="81" width="50" height="19"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Based on 83 reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hin-0e-jTp">
+                                        <rect key="frame" x="8" y="104" width="111" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" red="0.38431373238563538" green="0.38431373238563538" blue="0.38431373238563538" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Tf-OC-Y0a" customClass="RateView">
+                                        <rect key="frame" x="8" y="53" width="123" height="24"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="7Pc-rl-FeK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6Tf-OC-Y0a" secondAttribute="trailing" id="CCC-eQ-Aro"/>
+                                    <constraint firstItem="0ae-2S-GYS" firstAttribute="leading" secondItem="6Tf-OC-Y0a" secondAttribute="leading" id="DOW-ow-ok5"/>
+                                    <constraint firstItem="hin-0e-jTp" firstAttribute="top" secondItem="0ae-2S-GYS" secondAttribute="bottom" constant="4" id="N7T-RY-n04"/>
+                                    <constraint firstItem="hin-0e-jTp" firstAttribute="leading" secondItem="0ae-2S-GYS" secondAttribute="leading" id="XMr-tY-tLF"/>
+                                    <constraint firstItem="0ae-2S-GYS" firstAttribute="centerX" secondItem="kCo-oU-Yq9" secondAttribute="centerX" multiplier="0.5" id="fUi-4p-nam"/>
+                                    <constraint firstItem="0ae-2S-GYS" firstAttribute="top" secondItem="6Tf-OC-Y0a" secondAttribute="bottom" constant="4" id="nhC-V1-gYB"/>
+                                    <constraint firstItem="0ae-2S-GYS" firstAttribute="centerY" secondItem="kCo-oU-Yq9" secondAttribute="centerY" id="pff-BI-CMh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="rjh-kP-mHi" secondAttribute="trailing" constant="14" id="QgT-JE-Nee"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rjh-kP-mHi" secondAttribute="bottom" id="XFe-hI-elb"/>
+                    <constraint firstItem="rjh-kP-mHi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="etF-zz-Yl1"/>
+                    <constraint firstItem="rjh-kP-mHi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="14" id="mn1-vX-Ow6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="averageRatingLabel" destination="0ae-2S-GYS" id="tBk-yU-vYR"/>
+                <outlet property="graphBar1" destination="9EY-dl-gh8" id="iYe-n8-DBF"/>
+                <outlet property="graphBar2" destination="S5O-7B-fsU" id="WTK-GW-hGn"/>
+                <outlet property="graphBar3" destination="dTR-uD-NZt" id="pYI-a4-wtj"/>
+                <outlet property="graphBar4" destination="xDN-Hf-yBV" id="xXn-Qw-eNd"/>
+                <outlet property="graphBar5" destination="WlE-en-ZcK" id="9JJ-aL-rct"/>
+                <outlet property="overallRateView" destination="6Tf-OC-Y0a" id="hA4-dI-CdZ"/>
+                <outlet property="reviewCountLabel" destination="hin-0e-jTp" id="d2P-yG-btn"/>
+            </connections>
+            <point key="canvasLocation" x="53" y="203"/>
+        </tableViewCell>
+    </objects>
+</document>

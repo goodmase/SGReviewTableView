@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'SGReviewTableView_Example' do
   pod 'SGReviewTableView', :path => '../'
+  pod 'RateView', '~> 1.2'
 
   target 'SGReviewTableView_Tests' do
     inherit! :search_paths
