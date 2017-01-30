@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class SGReview;
 @interface SGReviewTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *reviews;
+@property (nonatomic, strong) NSArray<SGReview *> *reviews;
 @property (nonatomic, strong) UIColor *graphBarColor;
 
 
--(instancetype)initWithReviews:(NSArray *)reviews;
+-(instancetype)initWithReviews:(NSArray<SGReview *> *)reviews;
 
 @end
