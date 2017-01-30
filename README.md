@@ -51,6 +51,7 @@ SGReview *review = [[SGReview alloc] initWithRating:5.0 content:@"Excellent!" an
 ### Customization 
 Currently customization is limited. The following properties can be customized on SGReviewTableViewController:
 * graphBarColor - customize the color of the histogram bars at the top of the table view.
+
 ## Author
 
 Stephen Goodman, stephen.goodman@gmail.com
