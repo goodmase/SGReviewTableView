@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SGReviewTableView_Example' do
+  pod 'SGReviewTableView', :path => '../'
+
+  target 'SGReviewTableView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
