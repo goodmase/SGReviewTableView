@@ -20,6 +20,37 @@ it, simply add the following line to your Podfile:
 pod "SGReviewTableView"
 ```
 
+## Usage
+### Basic Example
+```Objective-C
+@import SGReviewTableView;
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    //create a review
+    SGReview *review = [[SGReview alloc] initWithRating:5.0 content:@"Excellent!" andDate:[NSDate new]];
+ 
+    SGReviewTableViewController *reviewTableView = [[SGReviewTableViewController alloc] initWithReviews:@[review]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:reviewTableView];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    return YES;
+}
+
+@end
+```
+### SGReview
+The SGReviewTableViewController accepts an array of SGReview objects. Currently only ratings of 0.0-5.0 are valid ratings.
+```Objective-C
+SGReview *review = [[SGReview alloc] initWithRating:5.0 content:@"Excellent!" andDate:[NSDate new]];
+```
+### Customization 
+Currently customization is limited. The following properties can be customized on SGReviewTableViewController:
+* graphBarColor - customize the color of the histogram bars at the top of the table view.
 ## Author
 
 Stephen Goodman, stephen.goodman@gmail.com
