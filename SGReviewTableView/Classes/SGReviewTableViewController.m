@@ -119,14 +119,20 @@ static NSString *HeaderCellIdentifier = @"HeaderCell";
 {
     if (indexPath.section == 0) {
         SGReviewHeaderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:HeaderCellIdentifier forIndexPath:indexPath];
+        cell.graphBar1.barColor = self.graphBarColor;
+        cell.graphBar2.barColor = self.graphBarColor;
+        cell.graphBar3.barColor = self.graphBarColor;
+        cell.graphBar4.barColor = self.graphBarColor;
+        cell.graphBar5.barColor = self.graphBarColor;
+        
         RateView* rv = cell.overallRateView;
         double averageRating = [self averageRatingForReviews:self.reviews];
         rv.rating = averageRating;
         rv.canRate = NO;
         rv.starSize = 24.0f;
         rv.starNormalColor = [UIColor whiteColor];
-        rv.starFillColor = [UIColor yellowColor];
-        rv.starBorderColor = [UIColor darkGrayColor];
+        rv.starFillColor = [UIColor colorWithRed:243/255.0f green:201/255.0f blue:76/255.0f alpha:1.0f];
+        rv.starBorderColor = [UIColor colorWithRed:145/255.0f green:108/255.0f blue:0/255.0f alpha:1.0f];
         
         cell.averageRatingLabel.text = [NSString stringWithFormat:@"%.1f/5.0", averageRating];
         cell.reviewCountLabel.text = [NSString stringWithFormat:@"based on %lu reviews", (unsigned long)[self.reviews count]];
@@ -142,8 +148,8 @@ static NSString *HeaderCellIdentifier = @"HeaderCell";
         rv.canRate = NO;
         rv.starSize = 14.0f;
         rv.starNormalColor = [UIColor whiteColor];
-        rv.starFillColor = [UIColor yellowColor];
-        rv.starBorderColor = [UIColor darkGrayColor];
+        rv.starFillColor = [UIColor colorWithRed:243/255.0f green:201/255.0f blue:76/255.0f alpha:1.0f];
+        rv.starBorderColor = [UIColor colorWithRed:145/255.0f green:108/255.0f blue:0/255.0f alpha:1.0f];
         
         NSDateFormatter *dateFormat = [NSDateFormatter new];
         [dateFormat setDateFormat:@"yyyy-M-d"];
@@ -157,19 +163,27 @@ static NSString *HeaderCellIdentifier = @"HeaderCell";
     
     
 }
--(void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
-    if([indexPath row] == ((NSIndexPath*)[[tableView indexPathsForVisibleRows] lastObject]).row){
+    [self updateReviewLabels];
+}
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([indexPath row] == 0 && [indexPath section] == 0) {
+        [cell layoutIfNeeded];
         [self updateReviewLabels];
     }
 }
+
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     if (section == 1) {
-        return 10;
+        return 6;
     } else{
         return 1;
     }
 }
+
 
 @end

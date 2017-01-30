@@ -11,6 +11,7 @@
 @interface SGReviewTableViewController : UITableViewController
 
 @property (nonatomic, strong) NSArray *reviews;
+@property (nonatomic, strong) UIColor *graphBarColor;
 
 
 -(instancetype)initWithReviews:(NSArray *)reviews;
