@@ -21,6 +21,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6788ADDF1451332B781DA53F /* Pods_SGReviewTableView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B75E38213C4AE7EFC3966B7 /* Pods_SGReviewTableView_Example.framework */; };
 		AA478D221E3FB0FB005E5E01 /* SGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA478D211E3FB0FB005E5E01 /* SGViewController.m */; };
+		AA478D251E3FC34E005E5E01 /* SGGen.m in Sources */ = {isa = PBXBuildFile; fileRef = AA478D241E3FC34E005E5E01 /* SGGen.m */; };
 		AF77DDC20683726238647F11 /* Pods_SGReviewTableView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB27EB8379E9D298BC03E1A /* Pods_SGReviewTableView_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		7B75E38213C4AE7EFC3966B7 /* Pods_SGReviewTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGReviewTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA478D201E3FB0FB005E5E01 /* SGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGViewController.h; sourceTree = "<group>"; };
 		AA478D211E3FB0FB005E5E01 /* SGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGViewController.m; sourceTree = "<group>"; };
+		AA478D231E3FC34E005E5E01 /* SGGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGen.h; sourceTree = "<group>"; };
+		AA478D241E3FC34E005E5E01 /* SGGen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGGen.m; sourceTree = "<group>"; };
 		C904D557225205797749CD2A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DCC052E0C0250EBBB66D0244 /* Pods-SGReviewTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGReviewTableView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGReviewTableView_Tests/Pods-SGReviewTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E6A1EF4326BAA62A38E57AF2 /* SGReviewTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SGReviewTableView.podspec; path = ../SGReviewTableView.podspec; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				6003F594195388D20070C39A /* Supporting Files */,
 				AA478D201E3FB0FB005E5E01 /* SGViewController.h */,
 				AA478D211E3FB0FB005E5E01 /* SGViewController.m */,
+				AA478D231E3FC34E005E5E01 /* SGGen.h */,
+				AA478D241E3FC34E005E5E01 /* SGGen.m */,
 			);
 			name = "Example for SGReviewTableView";
 			path = SGReviewTableView;
@@ -389,6 +394,7 @@
 				6003F59E195388D20070C39A /* SGAppDelegate.m in Sources */,
 				AA478D221E3FB0FB005E5E01 /* SGViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				AA478D251E3FC34E005E5E01 /* SGGen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

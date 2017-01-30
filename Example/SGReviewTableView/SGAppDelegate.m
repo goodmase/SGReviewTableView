@@ -8,6 +8,7 @@
 
 #import "SGAppDelegate.h"
 #import "SGViewController.h"
+#import "SGGen.h"
 
 @import SGReviewTableView;
 
@@ -15,10 +16,41 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //SGReview *aReview = [[SGReview alloc] initWithRating:4.5 content:@"Great experience!" andDate:[NSDate new]];
+    NSMutableArray *temp = [NSMutableArray new];
+    NSDate *d = [NSDate new];
+    for (int i = 0; i < 20; i++) {
+        d = [SGGen generateRandomDateWithinDaysBeforeToday:365];
+        [temp addObject:[[SGReview alloc] initWithRating:5.0 content:[SGGen randomParagraph] andDate:d]];
+    }
+    for (int i = 0; i < 10; i++) {
+        d = [SGGen generateRandomDateWithinDaysBeforeToday:365];
+        [temp addObject:[[SGReview alloc] initWithRating:4.5 content:[SGGen randomParagraph] andDate:d]];
+    }
+    for (int i = 0; i < 10; i++) {
+        d = [SGGen generateRandomDateWithinDaysBeforeToday:365];
+        [temp addObject:[[SGReview alloc] initWithRating:4.0 content:[SGGen randomParagraph] andDate:d]];
+    }
+    for (int i = 0; i < 10; i++) {
+        d = [SGGen generateRandomDateWithinDaysBeforeToday:365];
+        [temp addObject:[[SGReview alloc] initWithRating:4.5 content:[SGGen randomParagraph] andDate:d]];
+    }
+    for (int i = 0; i < 10; i++) {
+        d = [SGGen generateRandomDateWithinDaysBeforeToday:365];
+        [temp addObject:[[SGReview alloc] initWithRating:3.0 content:[SGGen randomParagraph] andDate:d]];
+    }
+    for (int i = 0; i < 5; i++) {
+        d = [SGGen generateRandomDateWithinDaysBeforeToday:365];
+        [temp addObject:[[SGReview alloc] initWithRating:2.0 content:[SGGen randomParagraph] andDate:d]];
+    }
+    for (int i = 0; i < 3; i++) {
+        d = [SGGen generateRandomDateWithinDaysBeforeToday:365];
+        [temp addObject:[[SGReview alloc] initWithRating:1.0 content:[SGGen randomParagraph] andDate:d]];
+    }
     
-    SGReview *aReview = [[SGReview alloc] initWithRating:4.5 content:@"Great experience!" andDate:[NSDate new]];
-    
-    SGReviewTableViewController *reviewVC = [[SGViewController alloc] initWithReviews:@[aReview]];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
+    SGViewController *reviewVC = [[SGViewController alloc] initWithReviews:[temp sortedArrayUsingDescriptors:@[sortDescriptor]]];
+    reviewVC.graphBarColor = [UIColor redColor];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:reviewVC];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
