@@ -11,15 +11,15 @@
 @class RateView;
 @interface SGReviewTableViewCell : UITableViewCell
 
-//// Rate view that shows the number of stars a review has
+/// Rate view that shows the number of stars a review has
 @property (weak, nonatomic) IBOutlet RateView *rateViewProperties;
 
 
-//// The date of the review
+/// The date of the review
 @property (weak, nonatomic) IBOutlet UILabel *dateLabelProperties;
 
 
-//// The review text
+/// The review text
 @property (weak, nonatomic) IBOutlet UILabel *reviewTextProperties;
 
 @end

@@ -10,10 +10,10 @@
 
 @interface SGBarView : UIView
 
-//// Percentage of the bar to be filled. Accepted values 0-1.0
+/// Percentage of the bar to be filled. Accepted values 0-1.0
 @property (nonatomic, assign) float percentage;
 
-//// The foreground color of the bar
+/// The foreground color of the bar
 @property (nonatomic, strong) UIColor *barColor;
 
 

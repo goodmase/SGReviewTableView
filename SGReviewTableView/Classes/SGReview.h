@@ -17,8 +17,13 @@
  */
 -(instancetype)initWithRating:(double)rating content:(NSString *)content andDate:(NSDate *)date;
 
+/// The text content of the review
 @property (nonatomic, copy) NSString *content;
+
+/// The rating of the review 0.0-5.0
 @property (nonatomic, assign) double rating;
+
+/// The date the review was written
 @property (nonatomic, strong) NSDate *date;
 
 @end
