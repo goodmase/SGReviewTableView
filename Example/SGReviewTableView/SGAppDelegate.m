@@ -49,7 +49,8 @@
     }
     
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];
-    SGViewController *reviewVC = [[SGViewController alloc] initWithReviews:[temp sortedArrayUsingDescriptors:@[sortDescriptor]]];
+    //SGViewController *reviewVC = [[SGViewController alloc] initWithReviews:[temp sortedArrayUsingDescriptors:@[sortDescriptor]]];
+    SGReviewTableViewController *reviewVC = [[SGReviewTableViewController alloc] initWithReviews:[temp sortedArrayUsingDescriptors:@[sortDescriptor]]];
     reviewVC.graphBarColor = [UIColor redColor];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:reviewVC];
@@ -61,6 +62,7 @@
     // Override point for customization after application launch.
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

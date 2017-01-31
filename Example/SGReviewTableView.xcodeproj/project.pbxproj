@@ -249,6 +249,9 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = goodmase;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 6M8D9MLMY9;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -524,6 +527,7 @@
 			baseConfigurationReference = 6FCAFDA4D6A2005411C0DD2F /* Pods-SGReviewTableView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6M8D9MLMY9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGReviewTableView/SGReviewTableView-Prefix.pch";
 				INFOPLIST_FILE = "SGReviewTableView/SGReviewTableView-Info.plist";
@@ -539,6 +543,7 @@
 			baseConfigurationReference = F35BE4D064B4394F37F71FC5 /* Pods-SGReviewTableView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6M8D9MLMY9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGReviewTableView/SGReviewTableView-Prefix.pch";
 				INFOPLIST_FILE = "SGReviewTableView/SGReviewTableView-Info.plist";
