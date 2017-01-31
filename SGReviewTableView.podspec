@@ -22,7 +22,7 @@ SGReviewTableView is a pod that provides a table view for displaying user review
                        DESC
 
   s.homepage         = 'https://github.com/goodmase/SGReviewTableView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://github.com/goodmase/SGReviewTableView/blob/master/screenshot.png?raw=True'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'goodmase' => 'stephen.goodman@gmail.com' }
   s.source           = { :git => 'https://github.com/goodmase/SGReviewTableView.git', :tag => s.version.to_s }
