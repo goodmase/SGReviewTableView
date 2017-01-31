@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/SGReviewTableView.svg?style=flat)](http://cocoapods.org/pods/SGReviewTableView)
 [![Platform](https://img.shields.io/cocoapods/p/SGReviewTableView.svg?style=flat)](http://cocoapods.org/pods/SGReviewTableView)
 
-![Alt text](/sgreviewtableview.gif?raw=true "SGReviewTableView Example")
+![Alt text](sgreviewtableview.gif?raw=true "SGReviewTableView Example")
 
 ## Example
 
@@ -16,11 +16,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 SGReviewTableView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-
-
 ```ruby
 pod "SGReviewTableView"
 ```
+
+## Documentation
+http://cocoadocs.org/docsets/SGReviewTableView/ 
 
 ## Usage
 ### Basic Example
