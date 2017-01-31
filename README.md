@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/SGReviewTableView.svg?style=flat)](http://cocoapods.org/pods/SGReviewTableView)
 [![Platform](https://img.shields.io/cocoapods/p/SGReviewTableView.svg?style=flat)](http://cocoapods.org/pods/SGReviewTableView)
 
+![Alt text](/sgreviewtableview.gif?raw=true "SGReviewTableView Example")
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
